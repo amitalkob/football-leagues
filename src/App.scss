@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+}
+
+.tabs {
+  .tabs_container {
+    display: flex;
+    background-color: #4caf50;
+  }
+
+  %tab-settings {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .tab {
+    background-color: #4caf50; /* Green */
+    @extend %tab-settings;
+  }
+
+  .tab_selected {
+    background-color: darkgreen;
+    @extend %tab-settings;
+  }
+}
+
+.team_info {
+  display: flex;
+  margin-top: 50px;
+  gap: 50px;
+
+  .img {
+    width: 100px;
+    height: 50px;
+    margin-left: 50px;
+  }
+
+  .name {
+    margin-top: 25px;
+    font-size: large;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    color: white;
+  }
+}
